@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+* {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#sidebar {
+    display: inline-block;
+    width: 240px;
+    color: white;
+    text-align: left;
+    background-color: #4D394B;
+    z-index: 10;
+    overflow-y: auto;
+    overflow-x: auto;
+    height: 100vh;
+    user-select: none;
+    padding: 20px;
+    flex-shrink: 0;
+}
+
+#sidebar h3 {
+    margin-top: 0;
+    float: left;
+    line-height: 40px;
+}
+
+#sidebar a {
+    color: #ccc;
+    text-decoration: none;
+    float: left;
+    clear: both;
+    margin-bottom: 5px;
+}
+
+#search-icon {
+    float: right;
+    font-size: 50px;
+    cursor: pointer;
+    line-height: 30px;
+}
+
+#pager {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin-left: 10px;
+}
+
+#pager>* {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    width: 30px;
+}
+
+#message-container {
+    overflow: auto;
+    height: 100vh;
+    flex-grow: 1;
+}
+
+.msg>* {
+    margin: 0;
+    float: left;
+    clear: both;
+}
+
+.msg {
+    margin: 10px;
+    float: left;
+    clear: both;
+}
+
+.msg-username {
+    float: left;
+    clear: both;
+    font-weight: bold;
+}
+
+.page-link {
+    float: left;
+    clear: both;
+}
+
+.msg-username, .msg-date {
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+.msg-date {
+    clear: none;
+    color: #ccc;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.msg-react>p {
+    margin: 0;
+    float: left;
+    background-color: #F5F5F5;
+    padding: 2px;
+    border-radius: 3px;
+    margin-right: 5px;
+    font-size: 1em;
+    vertical-align: middle;
+    line-height: 1.5em;
+    margin-top: 5px;
+}
+
+.tlink {
+    color: blue;
+    cursor: pointer;
+}
+
+#thread-viewer > .tlink {
+    float: left;
+    text-align:center;
+    width: 100%;
+}
+
+#thread-viewer {
+    display:none;
+    width: 400px;
+    z-index: 10;
+    overflow-y: auto;
+    overflow-x: auto;
+    height: 100vh;
+    padding: 10px;
+    flex-shrink: 0;
+    border-left: 1px solid black;
+}
+
+pre {
+    background-color: #f6f8fa;
+    padding: 10px;
+}
+
+code { 
+    background-color: #f6f8fa;
+    border-radius: 3px;
+    margin: 0;
+    padding: .2em .4em;
+    font-family: monospace;
+}

@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "web": "node index.js",
+    "import": "node import.js"
+  },
+  "dependencies": {
+    "@slack/client": "^4.8.0",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.9",
+    "morgan": "^1.9.1",
+    "unzipper": "^0.9.4"
+  }
+}
