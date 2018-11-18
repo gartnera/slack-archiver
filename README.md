@@ -2,6 +2,8 @@
 
 This tool is designed to store, index, and display slack messages. You can use it to import and view the slack export as well as import new messages in real time. We use it because of the message limit on our free slack team.
 
+![](.assets/screenshot.png)
+
 ## Slack API/Bot User
 
 1. You'll need to create a new slack app
