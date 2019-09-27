@@ -20,6 +20,7 @@ services:
     ports:
       - 3000:3000
     command: npm run web
+    restart: always
   import:
     <<: *base
     volumes:
@@ -27,3 +28,4 @@ services:
     command: npm run import /import.zip
   mongo:
     image: mongo:4.1.5
+    restart: always
