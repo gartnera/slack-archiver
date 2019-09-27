@@ -4,10 +4,10 @@
     "import": "node import.js"
   },
   "dependencies": {
-    "@slack/client": "^4.8.0",
-    "express": "^4.16.4",
-    "mongodb": "^3.1.9",
+    "@slack/client": "^5.0.2",
+    "express": "^4.17.1",
+    "mongodb": "^3.3.2",
     "morgan": "^1.9.1",
-    "unzipper": "^0.9.4"
+    "unzipper": "^0.10.5"
   }
 }
