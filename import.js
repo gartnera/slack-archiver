@@ -18,6 +18,10 @@ const channelNameMap = {};
 
 async function handleMessages(p, messages) {
   const channelId = channelNameMap[p.dir];
+  if (!channelId) {
+    console.debug(`WARN: unable to find channelId for ${p.dir}`);
+    return;
+  }
   await db.insertMessages(messages, channelId);
 }
 
