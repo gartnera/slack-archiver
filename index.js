@@ -10,7 +10,9 @@ const db = new SlackDatabase();
 
 const cspDirectives = [
     "default-src 'self' cdnjs.cloudflare.com fonts.googleapis.com fonts.gstatic.com",
-    "img-src http: https: data:",
+    "img-src * data:",
+    "style-src * data:",
+
 ]
 const cspString = cspDirectives.join('; ')
 
