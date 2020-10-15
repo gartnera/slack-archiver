@@ -1,3 +1,4 @@
+const process = require('process');
 const { RTMClient } = require('@slack/client');
 
 class SlackMessageBot {
@@ -12,7 +13,8 @@ class SlackMessageBot {
         this.rtm.on('message', (message) => this._handleMessage(message));
         this.rtm.on('reaction_added', (message) => this._handleReaction(message));
         this.rtm.on('reaction_removed', (message) => this._handleReaction(message));
-        this.rtm.on('team_join', (message) => this._handleJoin(message))
+        this.rtm.on('team_join', (message) => this._handleJoin(message));
+        this.rtm.on('disconnected', () => process.exit(1));
     }
 
     async _handleMessage(message) {
