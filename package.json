@@ -6,8 +6,8 @@
   "dependencies": {
     "@slack/client": "^5.0.2",
     "express": "^4.17.1",
-    "mongodb": "^3.3.2",
-    "morgan": "^1.9.1",
-    "unzipper": "^0.10.5"
+    "mongodb": "^3.6.2",
+    "morgan": "^1.10.0",
+    "unzipper": "^0.10.11"
   }
 }
